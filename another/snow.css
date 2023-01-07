@@ -1,0 +1,63 @@
+
+
+/*
+<---HTML--->
+<div class="snow-background">
+    <div class="snow"></div>
+</div>
+*/
+
+.snow-homebg {
+    background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(homebg.jpg) fixed;
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.snow,.snow::after,.snow::before {
+    content: "";
+    position: absolute;
+    top: -650px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    background-image: 
+    radial-gradient(4px 4px at 100px 50px, #fff, transparent),
+    radial-gradient(6px 6px at 200px 150px, #fff, transparent),
+    radial-gradient(3px 6px at 300px 250px, #fff, transparent),
+    radial-gradient(4px 4px at 400px 350px, #fff, transparent),
+    radial-gradient(6px 6px at 500px 100px, #fff, transparent),
+    radial-gradient(3px 6px at 50px 200px, #fff, transparent),
+    radial-gradient(4px 4px at 150px 300px, #fff, transparent),
+    radial-gradient(6px 6px at 250px 400px, #ffśf, transparent),
+    radial-gradient(3px 6px at 350px 500px, #fff, transparent);
+    background-size: 600px 600px;
+    animation: snowanim 3s linear;
+    animation-iteration-count: infinite;
+}
+
+.snow::after {
+    margin-left: -250px;
+    opacity: 0.5;
+    filter: blur(2px);
+}
+
+.snow::before {
+    margin-left: -350px;
+    opacity: 0.7;
+    filter: blur(1px);
+}
+
+@keyframes snowanim {
+
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(650px);
+    }
+}
