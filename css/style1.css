@@ -111,8 +111,6 @@ u{
 .snow-img {
     background: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url(about1.jpg) fixed;
 }
-
-
 .about-box{
     color:#fff;
     text-align: center;
@@ -146,9 +144,13 @@ u{
 }
 .card1{
     position: relative;
+   padding: 20px!important;
+}
+.box{
     align-items: center;
     padding: 10px;
 }
+
 .about-hover{
     background: linear-gradient(to right, #6d47ff, #007fc8);
     position: absolute;
