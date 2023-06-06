@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Holiday</title>
+    <link rel="icon" href="image/icon.png">
     <link rel='stylesheet' href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
@@ -63,12 +64,8 @@
                     <span class="underline">Holiday</span>
                 </span>
             </h1>
-
         </div>
-
     </header>
-
-
 
     <!--Services Section-->
 
@@ -139,9 +136,7 @@
         </div>
     </section>
 
-
     <!--About Section-->
-
 
     <section class="about-sec m-0" id="about">
         <div class="container about-container">
@@ -163,7 +158,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="about-icon">
         <div class="snow-img">
@@ -231,10 +225,9 @@
                     </div>
                 </div>
             </div>
-
         </div>
-
     </section>
+
     <section class="portblack" id="portfolio">
         <div class="container-black">
             <div class="row">
@@ -384,7 +377,7 @@
     </section>
 
 
-    <!------Team S ection------->
+    <!------Team Section------->
 
     <section class="team" id="team">
         <div class="container">
@@ -677,7 +670,7 @@
                                 <div class="col-md-12 text-center">
                                     <div>
                                         <div id="submit">
-                                            <button>submit form</button>
+                                            <button class="btn btn-primary" type="submit">submit form</button>
                                         </div>
                                     </div>
                                 </div>
@@ -687,15 +680,15 @@
                     <div class="row last py-5">
                         <div class="col-lg-4 col-md-12 contact-last text-center">
                             <p class="fw-bolder">Call Us</p>
-                            <p class="text-muted">(208) 333 9296</p>
+                            <p class="last-content">(208) 333 9296</p>
                         </div>
                         <div class="col-lg-4 col-md-12 contact-last text-center">
                             <p class="fw-bolder">Address</p>
-                            <p class="text-muted">Collins Street West, London, UK</p>
+                            <p class="last-content">Collins Street West, London, UK</p>
                         </div>
                         <div class="col-lg-4 col-md-12 contact-last text-center">
                             <p class="fw-bolder">Email Us</p>
-                            <p class="text-muted">contact@bolostudio.com</p>
+                            <p class="last-content">contact@bolostudio.com</p>
                         </div>
                     </div>
                 </div>
@@ -706,7 +699,7 @@
 
     <section class="footer bg-dark ">
         <div class="container">
-            <div class="row d-flex justify-content-around align-items-center py-3">
+            <div class="row footer-row d-flex justify-content-around align-items-center py-3">
                 <div class="col-12 col-sm-6 col-md-4">
                     <p class="text-light">© Copyright 2022 - Bolo by Designesia</p>
                 </div>
@@ -737,7 +730,7 @@
     <script src="bootstrap.bundle.min.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script>
-        const navLinks = document.querySelectorAll(".nav-item");
+        const navLinks = document.getElementsByClassName("nav-item");
         const menuToggle = document.getElementById("navbarNav");
         let bsCollabse = new bootstrap.Collapse(menuToggle, { toggle: false })
         navLinks.forEach((e) => {

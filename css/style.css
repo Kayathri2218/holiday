@@ -4,7 +4,9 @@
     box-sizing: border-box;
     font-family: "Heebo", Arial, Helvetica, sans-serif;
 }
-
+body{
+    z-index: 0;
+}
 /*home*/
 /*
 .home-head h1{
@@ -22,7 +24,8 @@ h1 span.underline{
 }
 */
 .snow-homebg {
-    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(homebg.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)), url(homebg.jpg) fixed;
+    background-size: cover;
 }
 
 .nav-sec {
@@ -31,6 +34,7 @@ h1 span.underline{
     left: 0;
     right: 0;
     padding: 10px;
+    z-index: 10;
     background: rgba(82, 77, 77, 0.589);
 }
 
@@ -421,6 +425,7 @@ h1 span.underline{
 
 .field-set input {
     padding: 10px;
+    
     background: rgba(143, 137, 137, 0.007);
     border: solid 1px rgba(255, 255, 255, .2);
 }
@@ -435,7 +440,7 @@ h1 span.underline{
     background: transparent !important;
     color: #fff !important;
     outline: 0!important;
-    border-color: rgba(255, 255, 255, .2)!important;
+    border-color: rgba(241, 238, 238, 0.2)!important;
     box-shadow: none !important;
 }
 
@@ -443,6 +448,7 @@ h1 span.underline{
     color: #fff;
     padding: 12px;
     font-weight: 600;
+    outline: none;
     width: 180px;
     border-radius: 30px;
     background: linear-gradient(to right, #6d47ff, #007fc8);
@@ -459,6 +465,9 @@ h1 span.underline{
     align-items: center;
 }
 
+.last-content{
+    color: rgb(192, 179, 179);
+}
 
 .footer-icon {
     display: flex;
@@ -480,6 +489,18 @@ h1 span.underline{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.footer-icon iconify-icon:hover{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: #fff;
+    border-color: #000;
 }
 
 .twitter1 {
